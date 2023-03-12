@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .firstQuarter {
@@ -10,11 +11,14 @@ body {
 
 .Header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20%;
 }
 
 ul {
     display: flex;
+    gap: 24px;
     list-style-type: none;
 }
 
@@ -26,7 +30,20 @@ ul {
 
 .HeaderLinks, .HeroSubText {
     font-size: 18px;
-    color: #E5E7EB
+    color: #E5E7EB;
+    margin-bottom: 10px;
+}
+
+.firstQuarterNotHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20%;
+    padding: 100px 0px;
+}
+
+.firstHalfFirstQuarter {
+    width: 450px;
 }
 
 .HeroMain {
@@ -35,18 +52,62 @@ ul {
     color: #F9FAF8;
 }
 
-button, .fourthQuarter {
+button {
     background-color: #3882F6;
     color: #F9FAF8;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bigImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color:#E5E7EB;
+    padding: 100px 150px;
+}
+
+.secondQuarter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    gap: 48px;
+    padding-bottom: 120px;
+}
+
+.imageRows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 48px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:150px;
 }
 
 .itemText {
     color: #1F2937;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .image {
-    border-width: thin;
-    border:#3882F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    border: 3px solid #3882F6;
 }
 
 .secondQuarterTitle {
@@ -56,17 +117,42 @@ button, .fourthQuarter {
 }
 
 .thirdQuarter {
+    display: flex;
+    flex-direction: column;
     background-color: #E5E7EB;
+    padding: 100px 450px;
 }
 
 .quote {
     font-size: 36px;
+    font-weight: 300;
     color: #1F2937;
     font-style: italic;
 }
 
 .quoter {
     font-weight: 700;
+    align-self: flex-end;
+    font-size: 24px;
+}
+
+
+.fourthQuarter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 60px;
+    margin: 90px;
+    margin-left: 240px;
+    margin-right: 240px;
+    border-radius: 12px;
+}
+
+.CalltoActionHeader {
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .footer {
@@ -75,4 +161,5 @@ button, .fourthQuarter {
     padding: 36px;
     color: #E5E7EB;
     background-color: #1F2937;
+    font-size: 18px;
 }
